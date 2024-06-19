@@ -1,0 +1,444 @@
+
+.banner_space{
+    background-color: #F4ECE1;
+    width: 100%;
+    height: 550px;
+    padding-top: 1rem;
+}
+
+.banner_img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3.5rem;
+    width: 150px;
+    height: 150px;
+    border-radius: 3rem;
+}
+
+.banner_title{
+    display: flex;
+    justify-content: center;
+    font-size: 150px;
+    margin-top: 1rem;
+}
+ .banner_btn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border-radius: 2rem;
+    background-color: #FF7648;
+    border-style: none;
+    color: white;
+    height: 50px;
+    width: 222px;
+}
+@media screen and ( max-width:1200px ){
+    .banner_img{
+        width: 140px;
+        height: 140px;
+    }
+
+    .banner_title{
+        font-size: 100px;
+    }
+}
+@media screen and ( max-width:992px ){
+    .banner_img{
+        width: 135px;
+        height: 135px;
+    }
+
+    .banner_title{
+        font-size: 90px;
+    }
+}
+@media screen and ( max-width:768px ){
+    .banner_img{
+        width: 120px;
+        height: 120px;
+    }
+
+    .banner_title{
+        font-size: 75px;
+    }
+}
+body {
+    padding: 0;
+    box-sizing: border-box;
+    font-size:1rem;
+    
+}
+
+.informacion_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.who {
+    text-align: center;
+}
+
+.caninos_montana{
+        width: 255px;
+        height: 255px;
+        object-fit: cover;
+        object-position: -1px -77px;
+    
+}
+
+.informacion_2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    
+}
+
+.trascendencia{
+    text-align: center;
+}
+
+.cocker_talado {
+    width: 261px;
+    height: 198px;
+    object-fit: contain;
+}
+
+.title{
+    font-family: "Amatic SC", sans-serif;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: unset;
+    text-align: center;
+    
+}
+
+.paragraph {
+    font-size: 15px;
+    font-family: "Amatic SC", sans-serif;
+    text-align: justify;
+    
+}
+
+
+@media  (min-width: 567px){
+    .container{
+        /* width: calc(567px - 30px); */
+        margin:  auto 20px;
+    }
+
+    .informacion_1 {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    img.caninos_montana {
+        margin-top: 26px;
+        width: 244px;
+        height: 235px;
+    }
+
+    .informacion_2 {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 20px;
+    }
+
+    img.cocker_talado {
+        width: 255px;
+        height: 204px;
+        /* margin-top: 27px; */
+    }
+}
+
+
+@media (min-width: 768px) {
+    
+    .container{
+        width: calc(768px - 30px);
+        margin:  auto 20px;
+     }
+
+     section.who-im {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        align-items: baseline;
+                
+    }
+        
+
+    .informacion_1 {
+        flex-direction: column;
+    }
+    .informacion_2 {
+        flex-direction: column;
+    }
+
+    img.caninos_montana {
+        width: 343px;
+        height: 274px;
+        object-position: 0px -101px;
+        object-fit: cover;
+        margin: -22px 0px 5px 1px;
+    }
+
+    img.cocker_talado {
+        margin: -21px -12px;
+        width: 258px;
+        height: 273px;
+        object-fit: cover;
+        object-position: -28px 0px;
+    }
+
+}
+
+@media (min-width: 992px) {
+    section.who-im {
+        gap: 170px;
+        align-items: flex-start;
+    }
+    
+    .who {
+        text-align: center;
+        margin: 0px 0px 22px 0px;
+    }
+
+   
+    img.caninos_montana {
+        width: 309px;
+        height: 253px;
+    }
+
+    img.cocker_talado {
+        width: 321px;
+        height: 253px;
+        margin-top: 48px;
+    }    
+}
+
+@media (min-width: 1200px) {
+    section.who-im {
+        gap: 170px;
+        align-items: flex-start;
+    }
+    
+    .who {
+        text-align: center;
+        margin: 15px 0px 22px 27px;
+    }
+
+    section.who-im {
+        gap: 170px;
+        align-items: flex-start;
+    }
+
+    .paragraph{
+        font-size: 17px;
+    }
+    img.caninos_montana {
+        width: 309px;
+        height: 253px;
+        margin-top: 10px;
+    }
+
+    img.cocker_talado {
+        width: 321px;
+        height: 253px;
+        margin-top: 48px;
+    } 
+}
+.paseo_space {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+    list-style: none;
+}
+
+.paseo_img {
+    width: 470px;
+    height: 395px;
+    object-fit: cover;
+}
+
+.paseo_info {
+    background-color: #f4ece1;
+    width: 470px;
+    height: 395px;
+
+}
+
+.paseo_main {
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+}
+
+.paseo_title {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.paseo_info h3 {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.paseo_info hr {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: black;
+}
+
+.eslogan_paseo {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.btn_reservar {
+    background-color: white;
+    color: black;
+    border-style: none;
+    border-radius: 2rem;
+    width: 150px;
+    height: 52px;
+}
+
+.ver_mas {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border-radius: 2rem;
+    background-color: #FF7648;
+    border-style: none;
+    color: white;
+    height: 50px;
+    width: 222px;
+    margin-bottom: 5rem;
+}
+
+.ver_mas:hover {
+    color: black;
+    transition: 0.3s;
+}
+
+.ver_mas_link {
+    text-decoration: none;
+}
+
+@media (min-width: 380px) {
+
+    .paseo_title{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .paseo_space {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .paseo_img,
+    .paseo_info {
+        width: 300px;
+        height: 185px;
+    }
+
+    .paseo_info {
+        height: 360px;
+    }
+
+}
+
+@media (min-width: 567px) {
+
+    .paseo_space{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .paseo_img,
+    .paseo_info {
+        width: 400px;
+        height: 185px;
+    }
+
+    .paseo_info {
+        height: 360px;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .paseo_space{
+        flex-direction: row;
+    }
+    .paseo_img,
+    .paseo_info {
+        width: 300px;
+        height: 360px;
+    }
+
+    .paseo_info {
+        height: 360px;
+    }
+
+}
+
+@media screen and (min-width:998px) {
+    .paseo_space {
+        display: flex;
+        flex-basis: 100%;
+        justify-content: center;
+        list-style: none;
+    }
+    
+    .paseo_img {
+        width: 370px;
+        height: 395px;
+        object-fit: cover;
+    }
+    
+    .paseo_info {
+        background-color: #f4ece1;
+        width: 370px;
+        height: 395px;
+    
+    }
+}
+
+@media screen and (min-width:1200px){
+    .paseo_space {
+        display: flex;
+        flex-basis: 100%;
+        justify-content: center;
+        list-style: none;
+    }
+    
+    .paseo_img {
+        width: 470px;
+        height: 395px;
+        object-fit: cover;
+    }
+    
+    .paseo_info {
+        background-color: #f4ece1;
+        width: 470px;
+        height: 395px;
+    
+    }
+
+}
+

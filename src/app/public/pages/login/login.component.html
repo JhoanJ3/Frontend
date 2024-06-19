@@ -1,1 +1,30 @@
-<p>login works!</p>
+<div>
+  <button type="button" class="button1" data-bs-toggle="modal" data-bs-target="#exampleModal"  >
+    Entrar
+  </button>
+</div>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Correo electronico</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Contraseña</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+          </div>
+          <button type="button" class="botonregistro" data-bs-dismiss="modal"><a class="linkregistrate" routerLink="/register" >Registrate</a></button>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button class="botton2" type="button" class="btn">Entrar</button>
+      </div>
+    </div>
+  </div>
+</div>

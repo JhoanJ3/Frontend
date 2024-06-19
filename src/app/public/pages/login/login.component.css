@@ -1,0 +1,212 @@
+.button1{
+    background-color: #FF7648;
+    border-radius: 2rem;
+    color: white;
+    border-style: none;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.nav_space{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.nav img{
+    float: inline-start;
+    margin-left: 10px;
+}
+
+.link_space{
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+}
+
+.link_text,
+.link_entrar{
+    color: black;
+    text-decoration: none;
+}
+
+.link_entrar{
+    float: inline-end;
+    margin-right: 15px;
+}
+
+.link_text:hover{
+    color: orange;
+    transition: 0.3s;
+}
+
+.link_entrar:hover{
+    color: rgba(0, 0, 0, 0.6);
+    transition: 0.3s;
+}
+
+li{
+    font-family: "Wix Madefor Text", Arial, Helvetica, sans-serif;
+}
+
+.ham_menu,
+.cerrar_menu{
+    display: none;
+}
+
+
+
+.eslogan{
+    display: flex;
+    justify-content: center;
+    font-size: large;
+}
+
+
+
+.registro{
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius:0.375rem;
+    width: 68.76px;
+    height: 37.6px;
+    text-align: left;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    }
+    .botonregistro{
+         background-color: #6c757d; 
+        border-radius:0.375rem;
+        border-style: none;
+    }
+    .botton1{
+        background-color: #FF7648;
+        border-radius: 2rem;
+        color: white;
+        border-style: none;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .botton2{
+        background-color: #FF7648;
+        border-radius: 0.375rem;
+        color: white;
+        border-style: none;
+        width: 73.06px;
+        height: 37.6px;
+    }
+    .linkregistrate{
+        text-decoration: none;
+        color: white;        
+    }
+    .linkregistrate:hover{
+        color: white;
+    }
+    .listareg{
+        list-style-type: none;
+        width: 30%;
+    }
+    .listasregistro{
+        display: flex;
+        flex-direction: row;
+        margin-top: 5rem;
+        justify-content: center;
+        justify-content: space-evenly;
+
+    }
+    .registroh1{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .registroboton{
+        justify-content: center;
+        align-items: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 10rem;
+        background-color: #FF7648;
+        border-style: none;
+    }
+    .botton3{
+        background-color: #FF7648;
+        border-radius: 0.375rem;
+        color: white;
+        border-style: none;
+        width: 100px;
+        height: 37.6px;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+
+
+
+
+
+@media screen and ( max-width: 576px ) {
+
+    .ham_menu,
+    .cerrar_menu{
+        display: block;
+        order: 2;
+        float: right;
+        border: 0;
+        font-size: 1.50rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .menu_space{
+        display: none;
+        visibility: hidden;
+    }
+    
+    .visible{
+        display: block;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .notVisible{
+        display: none;
+        visibility: hidden;
+    }
+
+    .nav_space{
+        justify-content: center;
+        gap: 7rem;
+    }
+
+    .link_space{
+        top: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    /* .banner_img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .banner_title{
+        font-size: 50px;
+    } */
+
+    .listasregistro{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
