@@ -28,14 +28,7 @@
     float: inline-end;
     margin-right: 15px;
 }
-.button1{
-    background-color: #FF7648;
-    border-radius: 2rem;
-    color: white;
-    border-style: none;
-    padding-left: 8px;
-    padding-right: 8px;
-}
+
 
 .link_text:hover{
     color: orange;
