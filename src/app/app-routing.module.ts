@@ -6,6 +6,8 @@ import { RegisterComponent } from './public/pages/register/register.component';
 import { PetsComponent } from './private/pages/pets/pets.component';
 import { BookingsComponent } from './private/pages/bookings/bookings.component';
 import { OurServicesComponent } from './private/pages/our-services/our-services.component';
+import { AboutUsComponent } from './private/about-us/about-us.component';
+import { ContactUsComponent } from './private/pages/contact-us/contact-us.component';
 
 const routes: Routes = [
   {path:"",component: HomeComponent},
@@ -14,6 +16,9 @@ const routes: Routes = [
   {path:"dashboard/pets", component: PetsComponent},
   {path:"dashboard/bookings", component: BookingsComponent},
   {path:"dashboard/our-services", component: OurServicesComponent},
+  {path:"dashboard/register-pets", component: PetsComponent },
+  {path:"dashboard/about-us", component: AboutUsComponent},
+  {path:"dashboard/cotact-us", component: ContactUsComponent},
   {path:"**", redirectTo: ""}
 ];
 

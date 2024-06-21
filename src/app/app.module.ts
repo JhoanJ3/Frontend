@@ -11,6 +11,8 @@ import { BookingsComponent } from './private/pages/bookings/bookings.component';
 import { HomeComponent } from './public/pages/home/home.component';
 import { LoginComponent } from './public/pages/login/login.component';
 import { RegisterComponent } from './public/pages/register/register.component';
+import { AboutUsComponent } from './private/about-us/about-us.component';
+import { ContactUsComponent } from './private/pages/contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { RegisterComponent } from './public/pages/register/register.component';
     BookingsComponent,
     HomeComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    AboutUsComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
