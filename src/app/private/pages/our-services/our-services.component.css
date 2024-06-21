@@ -49,6 +49,10 @@ a:hover{
     border-radius: none;
 }
 
+.card-body {
+    text-align: center;
+}
+
 .card_title,
 .card_text,
 .card_price{
