@@ -34,6 +34,12 @@
     height: 50px;
     width: 222px;
 }
+
+a.pase_link {
+    color: white;
+}
+
+
 @media screen and ( max-width:1200px ){
     .banner_img{
         width: 140px;
@@ -222,6 +228,19 @@ body {
     }    
 }
 
+@keyframes show{
+    from{
+        opacity: 0;
+        scale: 25%;
+
+    }
+
+    to{
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
 @media (min-width: 1200px) {
     section.who-im {
         gap: 170px;
@@ -234,8 +253,17 @@ body {
     }
 
     section.who-im {
-        gap: 170px;
-        align-items: flex-start;
+        gap: 226px;
+        display: flex;
+        margin: 1rem;
+
+        view-timeline-name: --main;
+        view-timeline-axis: block;
+    
+        animation-timeline: --main;
+        animation-name: show;
+        animation-range: entry 9% cover 34%;
+        animation-fill-mode: both;
     }
 
     .paragraph{
@@ -279,13 +307,20 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 3rem;
+
+    view-timeline-name: --main;
+    view-timeline-axis: block;
+
+    animation-timeline: --main;
+    animation-name: show;
+    animation-range: entry 43% cover 27%;
+    animation-fill-mode: both;
 }
 
 .paseo_title {
     display: flex;
-    justify-content: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin: 3rem;
+    padding: 113px 63px 4px 101px;
 }
 
 .paseo_info h3 {
@@ -334,6 +369,14 @@ body {
 
 .ver_mas_link {
     text-decoration: none;
+
+    view-timeline-name: --main;
+    view-timeline-axis: block;
+
+    animation-timeline: --main;
+    animation-name: show;
+    animation-range: entry 12% cover 42%;
+    animation-fill-mode: both;
 }
 
 @media (min-width: 380px) {
@@ -341,6 +384,14 @@ body {
     .paseo_title{
         justify-content: center;
         align-items: center;
+
+        view-timeline-name: --main;
+        view-timeline-axis: block;
+    
+        animation-timeline: --main;
+        animation-name: show;
+        animation-range: entry -73% cover 111%;
+        animation-fill-mode: both;
     }
 
     .paseo_space {

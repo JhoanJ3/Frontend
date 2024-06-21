@@ -68,6 +68,8 @@ a:hover{
 .card_btn{
     background-color: #FF7648;
     padding: 16px;
+    color: white;
+    border-block-color: white;
 }
 
 .card_btn:hover{
