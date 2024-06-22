@@ -13,6 +13,12 @@ import { LoginComponent } from './public/pages/login/login.component';
 import { RegisterComponent } from './public/pages/register/register.component';
 import { AboutUsComponent } from './private/about-us/about-us.component';
 import { ContactUsComponent } from './private/pages/contact-us/contact-us.component';
+import { NewBookingComponent } from './private/pages/bookings/new-booking/new-booking.component';
+import { UpdateBookingComponent } from './private/pages/bookings/update-booking/update-booking.component';
+import { NewPetComponent } from './private/pages/pets/new-pet/new-pet.component';
+import { UpdatePetComponent } from './private/pages/pets/update-pet/update-pet.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { provideHttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,13 +32,18 @@ import { ContactUsComponent } from './private/pages/contact-us/contact-us.compon
     LoginComponent,
     RegisterComponent,
     AboutUsComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    NewBookingComponent,
+    UpdateBookingComponent,
+    NewPetComponent,
+    UpdatePetComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [provideHttpClient()],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
