@@ -17,4 +17,8 @@ export class BookingsService {
   getBookings() {
     return this.http.get<any>( 'http://localhost:3000/api/reservas' )
   }
+
+  updateBookings( id: String, updateBooking: any ) {
+    return this.http.patch<any>( `http://localhost:3000/api/reservas/${ id }`, updateBooking )
+  }
 }
