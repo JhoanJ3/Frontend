@@ -21,11 +21,11 @@
         <td>{{ pet.idUser }}</td>
         <td>{{ pet.description }}</td>
         <td>
-          <img [src]="pet.urlImage" [alt]="pet.name">
+          
         </td>
         <td>
-          <a href=""class="btn btn-primary">Edit</a>
-          <a href=""class="btn btn-outline-primary">Delete</a>
+          <a href="" class="btn btn-primary">Edit</a>
+          <a (click)="onDelete( pet._id )" class="btn btn-outline-primary">Delete</a>
         </td>
       </tr>
     </tbody>

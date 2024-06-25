@@ -16,4 +16,8 @@ export class ServicesPetService {
   getPets() {
     return this.httpPet.get<any>( 'http://localhost:3000/api/pets' )
   }
+  removePet( id: any ) {
+    return this.httpPet.delete<any>( `http://localhost:3000/api/pets/${ id }` )
+  }
+
 }
