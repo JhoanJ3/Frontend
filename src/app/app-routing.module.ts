@@ -21,7 +21,7 @@ const routes: Routes = [
   {path:"dashboard/bookings", component: BookingsComponent},
   {path:"dashboard/new-booking", component: NewBookingComponent },
   {path:"dashboard/update-booking", component: UpdateBookingComponent },
-  {path:"dashboard/our-services", component: OurServicesComponent},
+  {path:"dashboard/our-services", component: OurServicesComponent}, 
   {path:"dashboard/register-pets", component: PetsComponent },
   {path:"dashboard/new-pet", component: NewPetComponent },
   {path:"dashboard/update-pet", component: UpdatePetComponent },

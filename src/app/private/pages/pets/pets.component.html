@@ -9,6 +9,7 @@
         <th scope="col">idUser</th>
         <th scope="col">description</th>
         <th scope="col">urlImage</th>
+        <th scope="col">Actions</th>
       </tr>
     </thead>
     <tbody>
@@ -22,7 +23,10 @@
         <td>
           <img [src]="pet.urlImage" [alt]="pet.name">
         </td>
-
+        <td>
+          <a href=""class="btn btn-primary">Edit</a>
+          <a href=""class="btn btn-outline-primary">Delete</a>
+        </td>
       </tr>
     </tbody>
   </table>
