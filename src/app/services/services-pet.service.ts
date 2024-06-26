@@ -20,4 +20,12 @@ export class ServicesPetService {
     return this.httpPet.delete<any>( `http://localhost:3000/api/pets/${ id }` )
   }
 
+  getPetById( id: any ) {
+    return this.httpPet.get<any>( `http://localhost:3000/api/pets/${ id }` )
+  }
+
+  updatePetById( id: any, updatedPet: any ) {
+    return this.httpPet.patch<any>( `http://localhost:3000/api/pets/${ id }`, updatedPet )
+  }
+
 }

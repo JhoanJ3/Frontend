@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ServicesPetService } from '../../../../services/services-pet.service';
 
 @Component({
@@ -13,7 +13,7 @@ export class NewPetComponent {
 
   constructor( private petServices: ServicesPetService ) {
     this.petForm = new FormGroup({
-      name: new FormControl( '', [] ),
+      name: new FormControl( '', [ Validators.required, Validators.minLength( 4 )]),
       race: new FormControl( '', [] ),
       age: new FormControl( '', [] ),
       idUser: new FormControl ( '', [] ),

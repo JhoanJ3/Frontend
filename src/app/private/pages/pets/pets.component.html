@@ -24,7 +24,7 @@
           
         </td>
         <td>
-          <a href="" class="btn btn-primary">Edit</a>
+          <a [routerLink]="['/dashboard/update-pet', pet._id]" class="btn btn-primary">Edit</a>
           <a (click)="onDelete( pet._id )" class="btn btn-outline-primary">Delete</a>
         </td>
       </tr>

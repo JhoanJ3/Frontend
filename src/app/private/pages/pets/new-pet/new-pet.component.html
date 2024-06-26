@@ -1,11 +1,14 @@
 <div class="container">
     <form [formGroup]="petForm"
     (ngSubmit)="registerPets()" >
-        <h1>Formulario De Mascotas</h1>
+        <h1>Registrar Mascota</h1>
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Nombre</label>
           <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="name">
-          <div id="emailHelp" class="form-text">mensaje de error</div>
+          <div *ngIf="petForm.get( 'name' )?.invalid && ( petForm.get( 'name' )?.dirty || petForm.get( 'name' )?.touched ) ">
+
+              <small *ngIf="petForm.get( 'name' )?.errors?.[ 'required' ]">El Nombre De La Mascota Es Requerido</small>
+          </div>
         </div>
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">Raza</label>
@@ -37,6 +40,6 @@
           <label class="form-check-label" for="exampleCheck1">Acepto Terminos y Condiciones</label>
           <div id="emailHelp" class="form-text">mensaje de error</div>
         </div>
-        <button type="submit" class="btn btn-primary">Reserva</button>
+        <button class="btn btn-primary" type="submit" [disabled]="petForm.invalid" >Registra</button>
       </form>
 </div>
