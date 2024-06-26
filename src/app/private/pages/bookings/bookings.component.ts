@@ -15,9 +15,21 @@ export class BookingsComponent {
   ) {}
 
   ngOnInit() {
+    this.dataLoad();
+  }
+
+  dataLoad(){
     this.bookingService.getBookings().subscribe( data => {
       console.log( data )
       this.bookings = data.data
+    })
+  }
+
+
+  onDeleteBooking (id: any){
+    this.bookingService.removeBooking( id ).subscribe( data => {
+      console.log ( data )
+      this.dataLoad()
     })
   }
 

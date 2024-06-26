@@ -1,25 +1,44 @@
-<form >
-    <h1>Formulario De Mascotas</h1>
-    <div class="mb-3">
-      <label for="exampleInputEmail1" class="form-label">Dia</label>
-      <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-      <div id="emailHelp" class="form-text">mensaje de error</div>
-    </div>
-    <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Hora</label>
-      <input type="time" class="form-control" id="exampleInputPassword1">
-    </div>
-    <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Paseador</label>
-      <input type="text" class="form-control" id="exampleInputPassword1">
-    </div>
-    <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Mascota</label>
-      <input type="text" class="form-control" id="exampleInputPassword1">
-    </div>
-    <div class="mb-3 form-check">
-      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-      <label class="form-check-label" for="exampleCheck1">Acepto Terminos y Condiciones</label>
-    </div>
-    <button type="submit" class="btn btn-primary">Reserva</button>
-  </form>
+<div class="container">
+  <form 
+    [formGroup]="petForm"
+    (ngSubmit)="actualizar()"
+ >
+      <h1>Actualiza Mascota</h1>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="name">
+        <div id="emailHelp" class="form-text">mensaje de error</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Raza</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" formControlName="race">
+        <div id="emailHelp" class="form-text">mensaje de error</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Edad</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" formControlName="age">
+        <div id="emailHelp" class="form-text">mensaje de error</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Dueño</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" formControlName="idUser">
+        <div id="emailHelp" class="form-text">mensaje de error</div>
+      </div>
+      <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Observaciones De La Mascota</label>
+          <input type="text" class="form-control" id="exampleInputPassword1" formControlName="description">
+          <div id="emailHelp" class="form-text">mensaje de error</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Foto De La Mascota</label>
+          <input type="text" class="form-control" id="exampleInputPassword1" formControlName="urlImage">
+          <div id="emailHelp" class="form-text">mensaje de error</div>
+        </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Acepto Terminos y Condiciones</label>
+        <div id="emailHelp" class="form-text">mensaje de error</div>
+      </div>
+      <button type="submit" class="btn btn-primary">Actualizar</button>
+    </form>
+</div>

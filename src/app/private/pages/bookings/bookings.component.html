@@ -15,6 +15,10 @@
         <td>{{ booking.day }}</td>
         <td>{{ booking.hour }}</td>
         <td>{{ booking.idServicio }}</td>
+        <td>
+          <a [routerLink]="['/dashboard/update-booking', booking._id ]"  class="btn btn-primary">Edit</a>
+          <a (click)="onDeleteBooking( booking._id)"  class="btn btn_outline-primary">Delete</a>
+        </td>
       </tr>
     </tbody>
   </table>

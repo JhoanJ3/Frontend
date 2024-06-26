@@ -9,6 +9,7 @@
         <th scope="col">idUser</th>
         <th scope="col">description</th>
         <th scope="col">urlImage</th>
+        <th scope="col">Actions</th>
       </tr>
     </thead>
     <tbody>
@@ -20,9 +21,12 @@
         <td>{{ pet.idUser }}</td>
         <td>{{ pet.description }}</td>
         <td>
-          <img [src]="pet.urlImage" [alt]="pet.name">
+          
         </td>
-
+        <td>
+          <a [routerLink]="['/dashboard/update-pet', pet._id]" class="btn btn-primary">Edit</a>
+          <a (click)="onDelete( pet._id )" class="btn btn-outline-primary">Delete</a>
+        </td>
       </tr>
     </tbody>
   </table>
