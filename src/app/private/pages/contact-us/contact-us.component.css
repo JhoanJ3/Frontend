@@ -7,7 +7,7 @@ footer.footer{
     background-color: #F4ECE1;
 }
 
-footer.footer .pre-footer {
+footer#footer .pre-footer {
 box-sizing: border-box;
 }
 
@@ -48,13 +48,13 @@ iframe.iframe-mapa {
     width: 100%;
 }
 
-footer.footer .footer{
+footer#footer .footer{
     background-color: black;
     padding: 20px 0px 15px 0px;
     box-sizing: border-box;
 }
 
-footer.footer .contenedor {
+footer#footer .contenedor {
     width: 100%;
     margin: 15px auto 50px auto;
     max-width: 85.5%;
@@ -85,7 +85,7 @@ input.form.mensaje {
     display: flex;
 }
 
-section.footer {
+#footer {
     display: flex;
     justify-content: space-between;
     align-items: center;

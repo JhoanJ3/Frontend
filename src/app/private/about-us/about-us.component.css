@@ -86,7 +86,7 @@ body {
     img.cocker_talado {
         width: 255px;
         height: 204px;
-        /* margin-top: 27px; */
+        margin-top: 27px;
     }
 }
 
@@ -99,6 +99,7 @@ body {
      }
 
      section.who-im {
+        padding-bottom: 50px;
         display: flex;
         flex-direction: row;
         gap: 30px;
@@ -123,18 +124,18 @@ body {
     }
 
     img.cocker_talado {
-        margin: -21px -12px;
+        margin: 0px 0px;
         width: 258px;
         height: 273px;
         object-fit: cover;
-        object-position: -28px 0px;
+        object-position: 0px 0px;
     }
 
 }
 
 @media (min-width: 992px) {
     section.who-im {
-        gap: 170px;
+        gap: 20px;
         align-items: flex-start;
     }
     
