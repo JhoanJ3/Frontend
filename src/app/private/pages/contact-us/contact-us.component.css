@@ -1,4 +1,250 @@
-p{
-    margin: 5rem;
-    padding: 5rem;
+a {
+    text-decoration: none;
+    color: white;
+}
+
+footer.footer{
+    background-color: #F4ECE1;
+}
+
+footer.footer .pre-footer {
+box-sizing: border-box;
+}
+
+section.pre-footer {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.widget {
+    flex-basis: 340px;
+}
+
+.widget.zonas {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.disponibles {
+    font-size: 22px;
+    margin: 0px;
+}
+
+.localidades {
+    font-size: 15px;
+}
+
+.localidad {
+    font-size: 17px;
+    margin: 5px 0 27px 0px;
+}
+
+iframe.iframe-mapa {
+    height: 100%;
+    width: 100%;
+}
+
+footer.footer .footer{
+    background-color: black;
+    padding: 20px 0px 15px 0px;
+    box-sizing: border-box;
+}
+
+footer.footer .contenedor {
+    width: 100%;
+    margin: 15px auto 50px auto;
+    max-width: 85.5%;
+}
+
+input.form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+input.form.name,
+input.form.email,
+input.form.asunto {
+    padding: 8px 5px;
+    margin: 0px 0px 10px 0px;
+    border: none;
+}
+
+input.form.mensaje {
+    padding: 0px 0px 100px 5px;
+    margin: 0px 0px 5px 0px;
+    border: none;
+}
+
+.btn-enviar {
+    display: flex;
+}
+
+section.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.copyright {
+    order: 2;
+    text-align: center;
+    color: gray;
+}
+
+
+.ter-condiciones {
+    order: 1;
+    margin: 0px 0px 20px 0px;
+}
+
+.contenedor.copy-ter-condiciones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+ul.menu-ter-condiciones {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 0;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin: 0;
+}
+
+li.men-ter-condiciones {
+    margin: 0px 0px 10px 0px;
+}
+
+.politicas-priv {
+    text-decoration: none;
+    color: white;
+}
+a.condiciones {
+    text-decoration: none;
+    color: white;
+}
+
+@media (min-width: 567px){ 
+
+    footer.footer .contenedor{
+        max-width: 92.5%; 
+        margin: 0px auto 40px auto;
+    }   
+    section.pre-footer {
+        flex-direction: row;
+    }   
+    section.footer {
+        flex-direction: row;
+        padding: 20px 0px 40px 0px;
+        text-decoration: none;
+        justify-content: space-between;
+        text-align: end;
+    }
+    .widget.zonas {
+        display: flex;
+        flex-direction: column;
+        justify-content: unset;
+    }
+    .disponibles {
+        font-size: 18px;
+        margin: 1px;
+    }
+    p.localidad {
+        margin: 7px 0px 0px 0px;
+        font-size: 15px;
+    }
+    input.form.name, input.form.email, input.form.asunto {
+        padding: 5px 3px;
+        margin: 0px 0px 5px 0px;
+        font-size: 15px;
+    }
+    input.form.mensaje {
+        padding: 0px 0px 60px 3px;
+        margin: 0px 0px 10px 0px;
+        font-size: 15px;
+    }
+    .contenedor.copy-ter-condiciones {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+
+    }
+    .copyright {
+        order: 1;
+        font-size: 14px;
+        text-align: justify;
+    } 
+    .ter-condiciones {
+        order: 2;
+    }
+    ul.menu-ter-condiciones{
+        flex-direction: row;
+        gap: .5rem;  
+        font-size: 12px;
+    }
+    .widget {
+        flex-basis: 33.33%;
+        height: 250px;
+    }
+    .men-ter-priv {
+        margin: 0;
+        padding: 23px 0px 0px 0px;
+    }
+    li.l-ter-condiciones {
+        margin: 20px 0px 0px 0px;
+    }
+}
+
+@media (min-width: 768px){ 
+    footer.footer .contenedor{
+       max-width: 90%; 
+    }
+    ul.menu-ter-condiciones {
+        gap: 1.5rem;
+        font-size: 13px;
+    }
+    .copyright {
+        font-size: 14px;
+    }          
+}
+@media ( min-width: 992px ) {
+
+    .localidad {
+        margin: 12px 0;
+    }
+    ul.menu-ter-condiciones {
+        gap: 2.5rem;
+        font-size: 14px;
+    }
+    .copyright {
+        font-size: 16px;
+    }
+    
+}
+
+@media ( min-width: 1025px ) {
+    p.localidad {
+        margin: 10px 0px 0px 0px;
+    }
+    
+}
+    
+@media ( min-width: 1200px ) {
+    
+    
+}
+@media ( min-width: 1400px ) {
+    
 }
