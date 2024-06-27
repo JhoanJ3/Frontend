@@ -14,11 +14,11 @@ export class NewPetComponent {
   constructor( private petServices: ServicesPetService ) {
     this.petForm = new FormGroup({
       name: new FormControl( '', [ Validators.required, Validators.minLength( 4 )]),
-      race: new FormControl( '', [] ),
-      age: new FormControl( '', [] ),
-      idUser: new FormControl ( '', [] ),
+      race: new FormControl( '', [ Validators.required, Validators.minLength( 4 )] ),
+      age: new FormControl( '', [ Validators.required, Validators.minLength( 1 )] ),
+      idUser: new FormControl ( '', [ Validators.required, Validators.minLength( 3 )] ),
       description: new FormControl( '', [] ),
-      urlImage: new FormControl( '', [] )
+      urlImage: new FormControl( '', [ Validators.required, Validators.minLength( 4 )] )
     })
   }
 

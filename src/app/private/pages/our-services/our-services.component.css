@@ -3,6 +3,19 @@ a{
     color: white;
 }
 
+@keyframes show{
+    from{
+        opacity: 0;
+        scale: 25%;
+
+    }
+
+    to{
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
 a:hover{
     color: white;
 }
@@ -14,6 +27,19 @@ a:hover{
     background-color: #F4ECE1;
     width: 100%;
     height: 165px;
+}
+
+img.card-img-top {
+    height: 245px;
+    object-fit: cover;
+
+    view-timeline-name: --main;
+    view-timeline-axis: block;
+
+    animation-timeline: --main;
+    animation-name: show;
+    animation-range: entry 43% cover 38%;
+    animation-fill-mode: both;
 }
 
 .serv_title{

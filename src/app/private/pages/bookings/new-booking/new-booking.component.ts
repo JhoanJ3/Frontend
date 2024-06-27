@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { BookingsService } from '../../../../services/bookings.service';
 
 @Component({
@@ -13,11 +13,11 @@ export class NewBookingComponent {
 
   constructor( private bookingServices: BookingsService ) {
     this.bookingForm = new FormGroup({
-      day: new FormControl( '', [] ),
-      hour: new FormControl( '', [] ),
-      idServicio: new FormControl( '', [] ),
-      idUser: new FormControl( '', [] ),
-      idPet: new FormControl( '', [] )
+      day: new FormControl( '', [ Validators.required ] ),
+      hour: new FormControl( '', [ Validators.required ] ),
+      idServicio: new FormControl( '', [ Validators.required ] ),
+      idUser: new FormControl( '', [ Validators.required ] ),
+      idPet: new FormControl( '', [ Validators.required ] )
     })
   }
 

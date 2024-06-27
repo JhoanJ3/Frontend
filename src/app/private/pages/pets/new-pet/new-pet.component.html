@@ -5,40 +5,59 @@
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Nombre</label>
           <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="name">
-          <div *ngIf="petForm.get( 'name' )?.invalid && ( petForm.get( 'name' )?.dirty || petForm.get( 'name' )?.touched ) ">
+          <div class="error" *ngIf="petForm.get( 'name' )?.invalid && ( petForm.get( 'name' )?.dirty || petForm.get( 'name' )?.touched ) ">
 
               <small *ngIf="petForm.get( 'name' )?.errors?.[ 'required' ]">El Nombre De La Mascota Es Requerido</small>
+              <small *ngIf="petForm.get( 'name' )?.errors?.[ 'minlength' ]">Minimo 4 Caracteres</small>
           </div>
         </div>
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">Raza</label>
           <input type="text" class="form-control" id="exampleInputPassword1" formControlName="race">
-          <div id="emailHelp" class="form-text">mensaje de error</div>
+          <div class="error" *ngIf="petForm.get( 'race' )?.invalid && ( petForm.get( 'race' )?.dirty || petForm.get( 'race' )?.touched ) ">
+
+            <small *ngIf="petForm.get( 'race' )?.errors?.[ 'required' ]">La Raza De La Mascota Es Requerida</small>
+            <small *ngIf="petForm.get( 'race' )?.errors?.[ 'minlength' ]">Minimo 4 caracteres</small>
+          </div>
         </div>
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">Edad</label>
           <input type="text" class="form-control" id="exampleInputPassword1" formControlName="age">
-          <div id="emailHelp" class="form-text">mensaje de error</div>
+          <div class="error" *ngIf="petForm.get( 'age' )?.invalid && ( petForm.get( 'age' )?.dirty || petForm.get( 'age' )?.touched ) ">
+
+            <small *ngIf="petForm.get( 'age' )?.errors?.[ 'required' ]">La Edad De La Mascota Es Requerida</small>
+            <small *ngIf="petForm.get( 'age' )?.errors?.[ 'minlength' ]">Minimo 1 caracteres</small>
+          </div>
         </div>
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">Dueño</label>
           <input type="text" class="form-control" id="exampleInputPassword1" formControlName="idUser">
-          <div id="emailHelp" class="form-text">mensaje de error</div>
+          <div class="error" *ngIf="petForm.get( 'idUser' )?.invalid && ( petForm.get( 'idUser' )?.dirty || petForm.get( 'idUser' )?.touched ) ">
+
+            <small *ngIf="petForm.get( 'idUser' )?.errors?.[ 'required' ]">Se Requiere El Nombre Del Dueño</small>
+            <small *ngIf="petForm.get( 'idUser' )?.errors?.[ 'minlength' ]">Minimo 4 caracteres</small>
+          </div>
         </div>
         <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Observaciones De La Mascota</label>
             <input type="text" class="form-control" id="exampleInputPassword1" formControlName="description">
-            <div id="emailHelp" class="form-text">mensaje de error</div>
+            <div class="error" *ngIf="petForm.get( 'description' )?.invalid && ( petForm.get( 'description' )?.dirty || petForm.get( 'description' )?.touched ) ">
+
+              <small *ngIf="petForm.get( 'description' )?.errors?.[ 'required' ]">Solo Si Es Necesario</small>
+            </div>
           </div>
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Foto De La Mascota</label>
             <input type="text" class="form-control" id="exampleInputPassword1" formControlName="urlImage">
-            <div id="emailHelp" class="form-text">mensaje de error</div>
+            <div class="error" *ngIf="petForm.get( 'urlImage' )?.invalid && ( petForm.get( 'urlImage' )?.dirty || petForm.get( 'urlImage' )?.touched ) ">
+
+              <small *ngIf="petForm.get( 'urlImage' )?.errors?.[ 'required' ]">Foto De La Mascota Es Requerido</small>
+              <small *ngIf="petForm.get( 'urlImafe' )?.errors?.[ 'minlength' ]">Minimo 4 caracteres</small>
+            </div>
           </div>
         <div class="mb-3 form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
           <label class="form-check-label" for="exampleCheck1">Acepto Terminos y Condiciones</label>
-          <div id="emailHelp" class="form-text">mensaje de error</div>
         </div>
         <button class="btn btn-primary" type="submit" [disabled]="petForm.invalid" >Registra</button>
       </form>

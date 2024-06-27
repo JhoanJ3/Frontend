@@ -18,39 +18,9 @@ section.pre-footer {
     flex-direction: column;
 }
 
-.widget {
-    flex-basis: 340px;
-}
-
-.widget.zonas {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: stretch;
-}
-
-.disponibles {
-    font-size: 22px;
-    margin: 0px;
-}
-
-.localidades {
-    font-size: 15px;
-}
-
-.localidad {
-    font-size: 17px;
-    margin: 5px 0 27px 0px;
-}
-
-iframe.iframe-mapa {
-    height: 100%;
-    width: 100%;
-}
-
 footer#footer .footer{
     background-color: black;
-    padding: 20px 0px 15px 0px;
+    padding: 40px 0px 20px 0px;
     box-sizing: border-box;
 }
 
@@ -58,31 +28,6 @@ footer#footer .contenedor {
     width: 100%;
     margin: 15px auto 50px auto;
     max-width: 85.5%;
-}
-
-input.form {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-}
-
-input.form.name,
-input.form.email,
-input.form.asunto {
-    padding: 8px 5px;
-    margin: 0px 0px 10px 0px;
-    border: none;
-}
-
-input.form.mensaje {
-    padding: 0px 0px 100px 5px;
-    margin: 0px 0px 5px 0px;
-    border: none;
-}
-
-.btn-enviar {
-    display: flex;
 }
 
 section.footer {
@@ -139,7 +84,7 @@ a.condiciones {
 
     footer#footer .contenedor{
         max-width: 92.5%; 
-        margin: 0px auto 40px auto;
+        margin: 0px auto 5px auto;
     }   
     section.pre-footer {
         flex-direction: row;
@@ -150,19 +95,6 @@ a.condiciones {
         text-decoration: none;
         justify-content: space-between;
         text-align: end;
-    }
-    .widget.zonas {
-        display: flex;
-        flex-direction: column;
-        justify-content: unset;
-    }
-    .disponibles {
-        font-size: 18px;
-        margin: 1px;
-    }
-    p.localidad {
-        margin: 7px 0px 0px 0px;
-        font-size: 15px;
     }
     input.form.name, input.form.email, input.form.asunto {
         padding: 5px 3px;
@@ -221,9 +153,7 @@ a.condiciones {
 }
 @media ( min-width: 992px ) {
 
-    .localidad {
-        margin: 12px 0;
-    }
+    
     ul.menu-ter-condiciones {
         gap: 2.5rem;
         font-size: 14px;
@@ -235,9 +165,6 @@ a.condiciones {
 }
 
 @media ( min-width: 1025px ) {
-    p.localidad {
-        margin: 10px 0px 0px 0px;
-    }
     
 }
     

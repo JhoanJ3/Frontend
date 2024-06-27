@@ -3,11 +3,11 @@ a {
     color: white;
 }
 
-footer.footer{
+section#footer{
     background-color: #F4ECE1;
 }
 
-footer#footer .pre-footer {
+section#footer .pre-footer {
 box-sizing: border-box;
 }
 
@@ -48,13 +48,13 @@ iframe.iframe-mapa {
     width: 100%;
 }
 
-footer#footer .footer{
+section#footer #footer{
     background-color: black;
     padding: 20px 0px 15px 0px;
     box-sizing: border-box;
 }
 
-footer#footer .contenedor {
+section#footer .contenedor {
     width: 100%;
     margin: 15px auto 50px auto;
     max-width: 85.5%;
@@ -85,55 +85,17 @@ input.form.mensaje {
     display: flex;
 }
 
-#footer {
+section#footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
 }
 
-.copyright {
-    order: 2;
-    text-align: center;
-    color: gray;
+.redes {
+    margin: -3rem;
 }
 
-
-.ter-condiciones {
-    order: 1;
-    margin: 0px 0px 20px 0px;
-}
-
-.contenedor.copy-ter-condiciones {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-}
-
-ul.menu-ter-condiciones {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 0;
-    align-items: center;
-    justify-content: flex-end;
-    flex-direction: column;
-    margin: 0;
-}
-
-li.men-ter-condiciones {
-    margin: 0px 0px 10px 0px;
-}
-
-.politicas-priv {
-    text-decoration: none;
-    color: white;
-}
-a.condiciones {
-    text-decoration: none;
-    color: white;
-}
 
 @media (min-width: 567px){ 
 
@@ -157,12 +119,12 @@ a.condiciones {
         justify-content: unset;
     }
     .disponibles {
-        font-size: 18px;
+        font-size: 25px;
         margin: 1px;
     }
     p.localidad {
         margin: 7px 0px 0px 0px;
-        font-size: 15px;
+        font-size: 18px;
     }
     input.form.name, input.form.email, input.form.asunto {
         padding: 5px 3px;
@@ -174,62 +136,18 @@ a.condiciones {
         margin: 0px 0px 10px 0px;
         font-size: 15px;
     }
-    .contenedor.copy-ter-condiciones {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row;
-
     }
-    .copyright {
-        order: 1;
-        font-size: 14px;
-        text-align: justify;
-    } 
-    .ter-condiciones {
-        order: 2;
-    }
-    ul.menu-ter-condiciones{
-        flex-direction: row;
-        gap: .5rem;  
-        font-size: 12px;
-    }
-    .widget {
-        flex-basis: 33.33%;
-        height: 250px;
-    }
-    .men-ter-priv {
-        margin: 0;
-        padding: 23px 0px 0px 0px;
-    }
-    li.l-ter-condiciones {
-        margin: 20px 0px 0px 0px;
-    }
-}
 
 @media (min-width: 768px){ 
-    footer.footer .contenedor{
+    section#footer .contenedor{
        max-width: 90%; 
     }
-    ul.menu-ter-condiciones {
-        gap: 1.5rem;
-        font-size: 13px;
-    }
-    .copyright {
-        font-size: 14px;
-    }          
+            
 }
 @media ( min-width: 992px ) {
 
     .localidad {
         margin: 12px 0;
-    }
-    ul.menu-ter-condiciones {
-        gap: 2.5rem;
-        font-size: 14px;
-    }
-    .copyright {
-        font-size: 16px;
     }
     
 }
