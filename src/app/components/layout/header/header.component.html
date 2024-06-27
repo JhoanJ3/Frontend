@@ -1,20 +1,36 @@
-<section class="nav">
-    <nav class="nav_space" id="nav_space">
-        <img src="assets/images/png/paw.png" alt="" srcset="" id="paw">
-        <button id="ham_menu" class="ham_menu" type="button"> <i class="bi bi-list"></i> </button>
-        <div class="menu_space" id="menu_space">
-            <ul id="link_space" class="link_space">
-                <button class="cerrar_menu" id="cerrar"><i class="bi bi-x"></i></button>
-                <li class="li"><a class="link_text" href="index.html">Inicio</a></li>
-                <li class="li"><a class="link_text" routerLink="/dashboard/about-us">Quienes Somos</a></li>
-                <li class="li"><a class="link_text" routerLink="/dashboard/new-pet">Registra Tu Mascota</a></li>
-                <li class="li"><a class="link_text" routerLink="/dashboard/our-services">Nuestros Servicios</a></li>
-                <li class="li"><a class="link_text" routerLink="/dashboard/cotact-us">Contactonos</a></li>
-                <li class="li">
-                  <app-login></app-login> 
-                    
+<header class="header">
+    <div class="image-nav">
+    <img src="assets/images/png/paw.png" alt="" srcset="" id="paw">
+        <nav class="menu">
+                
+              <input type="checkbox" id="menu-toggle" class="menu-toggle visually-hidden">
+              <label for="menu-toggle" class="menu-icon">&#9776;</label>
+              <ul class="menu-list">
+                <li class="menu-item"><a routerLink="/">Inicio</a></li>
+                <li class="menu-item"><a routerLink="/dashboard/about-us">Quienes Somos</a>
+                  
                 </li>
-            </ul>
-        </div>
-    </nav>
-</section>
+                <li class="menu-item"><a routerLink="/dashboard/new-pet">Registra Tu Mascota</a>
+                  
+                </li>
+                <li class="menu-item"><a routerLink="/dashboard/our-services">Nuestros Servicios</a></li>
+                    
+                <li class="menu-item"><a>Listas</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item"><a routerLink="/dashboard/pets">Mascotas</a></li>
+                        <li class="menu-item"><a routerLink="/dashboard/bookings">Reserva</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu-item"><a routerLink="/dashboard/cotact-us">Contáctanos</a></li>
+
+                <li class="li">
+                    <app-login></app-login> 
+                      
+                  </li>
+              </ul>
+        </nav>
+    </div>
+</header>
+        
+

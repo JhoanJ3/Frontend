@@ -35,6 +35,12 @@
     width: 222px;
 }
 
+.eslogan{
+    display: flex;
+    justify-content: center;
+    font-size: large;
+}
+
 a.pase_link {
     color: white;
 }
