@@ -5,28 +5,47 @@
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Dia</label>
           <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="day">
-          <div id="emailHelp" class="form-text">mensaje de error</div>
+          <div class="error" *ngIf="bookingForm.get( 'day' )?.invalid && ( bookingForm.get( 'day' )?.dirty || bookingForm.get( 'day' )?.touched ) ">
+
+            <small *ngIf="bookingForm.get( 'day' )?.errors?.[ 'required' ]">El Dia Es Requerido</small>
+          </div>
         </div>
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">Hora</label>
           <input type="time" class="form-control" id="exampleInputPassword1" formControlName="hour">
+          <div class="error" *ngIf="bookingForm.get( 'hour' )?.invalid && ( bookingForm.get( 'hour' )?.dirty || bookingForm.get( 'hour' )?.touched ) ">
+
+            <small *ngIf="bookingForm.get( 'hour' )?.errors?.[ 'required' ]">La Hora Es Requerida</small>
+          </div>
         </div>
         <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Servicio</label>
             <input type="text" class="form-control" id="exampleInputPassword1" formControlName="idServicio">
+            <div class="error" *ngIf="bookingForm.get( 'idServicio' )?.invalid && ( bookingForm.get( 'idServicio' )?.dirty || bookingForm.get( 'idServicio' )?.touched ) ">
+
+              <small *ngIf="bookingForm.get( 'idServicio' )?.errors?.[ 'required' ]">El Servcio Es Requerido</small>
+            </div>
           </div>
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">Paseador</label>
           <input type="text" class="form-control" id="exampleInputPassword1" formControlName="idUser">
+          <div class="error" *ngIf="bookingForm.get( 'idUser' )?.invalid && ( bookingForm.get( 'idUser' )?.dirty || bookingForm.get( 'idUser' )?.touched ) ">
+
+            <small *ngIf="bookingForm.get( 'idUser' )?.errors?.[ 'required' ]">Es Coger Un Paseador Es Obligario</small>
+          </div>
         </div>
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">Mascota</label>
           <input type="text" class="form-control" id="exampleInputPassword1" formControlName="idPet">
+          <div class="error" *ngIf="bookingForm.get( 'idPet' )?.invalid && ( bookingForm.get( 'idPet' )?.dirty || bookingForm.get( 'idPet' )?.touched ) ">
+
+            <small *ngIf="bookingForm.get( 'idPet' )?.errors?.[ 'required' ]">Selecciona Una Mascota Registrada</small>
+          </div>
         </div>
         <div class="mb-3 form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
           <label class="form-check-label" for="exampleCheck1">Acepto Terminos y Condiciones</label>
         </div>
-        <button type="submit" class="btn btn-primary">Reserva</button>
+        <button type="submit" class="btn btn-primary" [disabled]="bookingForm.invalid">Reserva</button>
       </form>
 </div>

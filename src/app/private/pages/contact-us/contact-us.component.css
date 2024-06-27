@@ -119,12 +119,12 @@ section#footer {
         justify-content: unset;
     }
     .disponibles {
-        font-size: 18px;
+        font-size: 25px;
         margin: 1px;
     }
     p.localidad {
         margin: 7px 0px 0px 0px;
-        font-size: 15px;
+        font-size: 18px;
     }
     input.form.name, input.form.email, input.form.asunto {
         padding: 5px 3px;
