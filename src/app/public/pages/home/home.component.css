@@ -92,7 +92,7 @@ a.pase_link {
 }
 
 @media (min-width: 1200px) {
-    section.who-im {
+    /* section.who-im {
         gap: 170px;
         align-items: flex-start;
     }
@@ -129,7 +129,7 @@ a.pase_link {
         width: 321px;
         height: 253px;
         margin-top: 48px;
-    } 
+    }  */
 }
 .paseo_space {
     display: flex;
