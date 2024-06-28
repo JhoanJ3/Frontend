@@ -69,7 +69,6 @@ section.nav {
     text-align: end;
    }
 
-   
     img#paw {
       width:  10px;
       margin: 15px -74px;
@@ -80,7 +79,6 @@ section.nav {
       display: block;
       font-size: 12px;
       color: orange;
-      
     }
     .image-nav{ 
       background-color: #f4ece1;
@@ -103,15 +101,12 @@ section.nav {
     .menu {
       flex-direction: row;
       justify-content: end;
-      align-items: center;  
-           
+      align-items: center;     
     }
     
     img#paw{
-        width: 30px;
-       
+        width: 30px;      
     }
-
     .image-nav{
       
         background-color: #f4ece1;
@@ -149,37 +144,12 @@ section.nav {
       padding: 0;
     }
     
-    
   }
  
   @media screen and (max-width: 992px) {
     
-    
-    
-    /* .menu-list {
-      display: none;
-      overflow: auto;
-      height: 100%;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: stretch;
-    } */
-    
-    /* .menu-toggle:checked ~ .menu-list {
-      display: flex;
-    } */
-    
-    /* Estilos para submenús */
-    /* .sub-menu {
-      display: none;
-    } */
-    
-    /* .menu-item:hover .sub-menu {
-      display: flex;
-      flex-direction: column;
-      position: static;
-    } */
   }
+
   @media screen and (max-width: 1250px) {
     
     
@@ -226,14 +196,6 @@ section.nav {
   
   /* Estilos para dispositivos de escritorio */
   @media screen and (min-width: 1300px) {
-    /* Disposición horizontal */
-    
-    /* .menu {
-      flex-direction: row;
-      justify-content: end;
-      align-items: center;  
-           
-    } */
    
     
     /* Estilos para el botón de menú */
@@ -245,27 +207,6 @@ section.nav {
       display: none;
     }
     
-    /* .menu-list {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      align-items: center;
-    } */
-    
-    /* Estilos para submenús */
-    /* .sub-menu {
-      position: absolute;
-      z-index: 1;
-      display: none;
-      padding: 0;
-    } */
-    
-    /* .menu-item:hover .sub-menu {
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      width: 100%;
-    } */
     .ancor{
       font-size: 10px;
       background-color: #edd3b1;
@@ -293,7 +234,6 @@ section.nav {
     }
     
 
-    
   }
  
   @media screen and (max-width: 1900px) {
