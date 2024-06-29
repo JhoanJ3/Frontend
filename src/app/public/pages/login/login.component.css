@@ -5,7 +5,8 @@
     border-style: none;
     padding-left: 8px;
     padding-right: 8px;
-    font-size: 24px;
+    font-size: 19px;
+    width: 70%;
 }
 .nav_space{
     display: flex;
@@ -211,3 +212,22 @@ li{
         align-items: center;
     }
 }
+
+.btn-modal-entrar {
+    display: flex;
+    justify-content: center;
+    margin: .5rem;
+    align-items: center;
+}
+
+
+
+    .button1{
+        font-size: 17px;
+        width: 100px;
+        font-weight: 600;
+      }
+
+
+
+
