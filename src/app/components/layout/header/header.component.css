@@ -336,6 +336,8 @@ section.nav {
           justify-content: space-between;
           align-items: center;
           height: 4rem;
+          background-color: wheat;
+          margin: 0.5rem;
         }
   
         /* Estilos para el botón de menú */

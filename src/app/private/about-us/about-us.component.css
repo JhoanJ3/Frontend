@@ -24,6 +24,8 @@ section.who-im {
     object-fit: cover;
     object-position: 20px -87px;
     margin-top: 10px;
+    margin: 1.5rem 14rem;
+
 }
 
 .fusion-title .title-sep-container {
@@ -49,6 +51,8 @@ section.who-im {
     object-fit: contain;
     margin-right: 5px;
     margin-bottom: 34px;
+    margin: 1.5rem 14rem;
+
 }
 
 .title{
@@ -102,6 +106,7 @@ section.who-im {
         margin: 5px;
         width: 251px;
         height: 235px;
+        margin: 1rem 3rem;
     }
 }
 
@@ -149,7 +154,9 @@ section.who-im {
         height: 315px;
         object-position: 0px -94px;
         object-fit: cover;
-        margin: 1px 0px 5px 0px;
+        /* margin: 1px 0px 5px 0px; */
+        object-position: 0px -85px;
+        margin: 51px 30px 38px 38px;
     
     }
 
@@ -160,6 +167,7 @@ section.who-im {
         height: 252px;
         object-fit: cover;
         object-position: 0px 0px;
+        margin: 1rem 3rem;
     }
 
 }
