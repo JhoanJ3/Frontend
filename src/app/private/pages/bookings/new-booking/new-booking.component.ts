@@ -25,6 +25,7 @@ export class NewBookingComponent {
     console.log( this.bookingForm.value),
     this.bookingServices.newBooking( this.bookingForm.value ).subscribe( data => {
       console.log( data )
+      this.bookingForm.reset()
     })
   }
 

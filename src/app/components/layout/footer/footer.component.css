@@ -80,7 +80,7 @@ a.condiciones {
     color: white;
 }
 
-@media (min-width: 567px){ 
+@media (min-width: 550px){ 
 
     footer#footer .contenedor{
         max-width: 92.5%; 

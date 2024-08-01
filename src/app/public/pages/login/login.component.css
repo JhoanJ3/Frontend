@@ -1,13 +1,14 @@
 .button1{
-    background-color: #FF7648;
+    background-color: black;
     border-radius: 2rem;
     color: white;
     border-style: none;
-    padding-left: 8px;
-    padding-right: 8px;
-    font-size: 19px;
-    width: 70%;
+    font-size: 15px;
+    width: 100%;
+    font-weight: 300;
+    padding: 4px 15px 5px 15px;
 }
+
 .nav_space{
     display: flex;
     align-items: center;
@@ -149,13 +150,13 @@ li{
         display: block;
     }
 
-
-
-
-
-
-@media screen and ( max-width: 576px ) {
-
+@media screen and ( min-width: 600px ) {
+    .button1{
+        font-size: 15px;
+        width: 100%;
+        font-weight: 400;
+        padding: 5px 20px 6px 20px;
+    }
     .ham_menu,
     .cerrar_menu{
         display: block;
@@ -220,14 +221,12 @@ li{
     align-items: center;
 }
 
-
-
+@media screen and ( min-width: 850px ){
     .button1{
-        font-size: 17px;
-        width: 100px;
-        font-weight: 600;
-      }
-
-
-
+        font-size: 20px;
+        width: 100%;
+        font-weight: 400;
+        padding: 5px 20px 6px 20px;
+    }
+}
 

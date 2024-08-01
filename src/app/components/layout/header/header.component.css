@@ -1,408 +1,192 @@
-/* 
-img#paw{
-    float: inline-start;
-    margin-left: 10px;
-    width: 30px;
+/* Estilos generales del menú */
+.menu {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  background-color: #F5DEB3;
+  border-radius: 10px;
+  margin: 10px;
 }
-.ancor{ 
-  text-decoration: none;
-  font-family: monospace;
-  text-decoration: none;
-  font-style: italic;
-  font-weight: bold;
-  font-size: 10px;
-  color: #1a1a1b;
-  background-color: #f4ece1;
-  border-radius: 7px;
-  padding: 4px;
-
+label.menu-icon {
+  font-size: 25px;
+  position: relative;
+  top: -20px;
+  left: 5%;
 }
-
-section.nav { 
-    justify-content: space-between;
-    margin: 10px 90px;
-    
-
-}
-.menu-list {
-    display: none;
-    list-style: none;
-    gap: 15px;
-  }
-  
-  .menu-toggle:checked ~ .menu-list {
-    display: block;
-  }
-  
-  .visually-hidden {
-    position: absolute;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    width: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
-  }
-  
-
-  .menu {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    overflow: hidden;
-  }
-  
-  .sub-menu .menu-item {
-      border: 1px dotted blue;
-      box-sizing: border-box;
-  }
-  .sub-menu .menu-item .sub-menu {
-     background-color: orange;
-  }
-
-  @media screen and (max-width: 320px) {
-   .menu{
-    text-align: end;
-   }
-
-    img#paw {
-      width:  10px;
-      margin: 15px -74px;
-      height: 48px;
-      object-fit: contain;
-  }
-    .menu-icon {
-      display: block;
-      font-size: 12px;
-      color: orange;
-    }
-    .image-nav{ 
-      background-color: #f4ece1;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .menu-toggle:checked ~ .menu-list {
-      display: flex;
-    }
-    .menu-item:hover .sub-menu {
-      display: flex;
-      flex-direction: column;
-      position: static;
-    }
-    
-  }
-
-  @media screen and (max-width: 768px) {
-    .menu {
-      display: flex;
-      flex-direction: row;
-      justify-content: end;
-      align-items: center;     
-    }
-    
-    img#paw{
-        width: 30px;      
-    }
-    .image-nav{
-      
-        background-color: #f4ece1;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      
-    }
-    .menu-icon {
-      display: block;
-      font-size: 42px;
-      color: orange;
-      margin-right: 30px;
-    }
-    
-  }
-
-  @media screen and (max-width: 820px) {
-    .menu {
-      flex-direction: row;
-      justify-content: end;
-      align-items: center;  
-           
-    }
-    .menu-list {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      align-items: center;
-    }
-    .sub-menu {
-      position: absolute;
-      z-index: 1;
-      display: none;
-      padding: 0;
-    }
-    
-  }
- 
-  @media screen and (max-width: 992px) {
-    
-  }
-
-  @media screen and (max-width: 1250px) {
-    
-    
-    .menu {
-      flex-direction: row;
-      justify-content: end;
-      align-items: center;  
-           
-    }
-    .menu-list {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      align-items: center;
-  }
-    
-
-    
-    
-    .menu-list {
-      display: none;
-      overflow: auto;
-      height: 100%;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: stretch;
-    }
-    
-    .menu-toggle:checked ~ .menu-list {
-      display: flex;
-    }
-    
-
-    .sub-menu {
-      display: none;
-    }
-    
-    .menu-item:hover .sub-menu {
-      display: flex;
-      flex-direction: column;
-      position: static;
-    }
-  }
-  
-
-  @media screen and (min-width: 1300px) {
-   
-  
-    .menu-toggle {
-      display: none;
-    }
-    
-    .menu-icon {
-      display: none;
-    }
-    
-    .ancor{
-      font-size: 10px;
-      background-color: #edd3b1;
-        
-    }
-   
-  }
-
-  @media screen and (max-width: 1500px) {
-    .menu{
-      margin: 10px 20px;
-      display: flex;
-      flex-direction: column;
-    }
-   
-
-    app-header{ 
-        display: flex;
-        justify-content: space-between;
-        
-    }
-    a.ancor{ 
-      font-size: 10px;
-      align-items: end;
-    }
-    
-
-  }
- 
-  @media screen and (max-width: 1900px) {
-   
-    img#paw {
-      padding-left: 90px;
-      width: 9rem;
-      margin-left: -35px;
-  }
-  a.ancor{ 
-    font-size: 20px;
-    align-items: end;
-    
-  }
-  
-  } */
-
-  .menu-item {
-    display: flex;
-    justify-content: center;
-  }
-
-
-      /* Oculta la lista del menú por defecto */
-      .menu-list {
-        display: none;
-      }
-  
-      /* Muestra la lista del menú cuando el checkbox está marcado */
-      .menu-toggle:checked ~ .menu-list {
-        display: block;
-      }
-  
-      /* Oculta el input asociado al label que despliega el icono del menu hamburguesa */
-      .visually-hidden {
-        position: absolute;
-        overflow: hidden;
-        clip: rect(0 0 0 0);
-        height: 1px;
-        width: 1px;
-        margin: -1px;
-        padding: 0;
-        border: 0;
-      }
-  
-      /* Estilos generales del menú */
-      .menu {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        overflow: hidden;
-      }
-  
-      /* .sub-menu .menu-item {
-          border: 1px dotted blue;
-          box-sizing: border-box;
-      }
-      .sub-menu .menu-item .sub-menu {
-         background-color: orange;
-      } */
-  
-      /* Estilos para dispositivos móviles */
-      @media screen and (max-width: 767px) {
-        /* Disposición vertical */
-        .menu {
-          flex-direction: column;
-        }
-
-  
-        .menu-list {
-          display: none;
-          overflow: auto;
-          height: 100%;
-          flex-direction: column;
-          justify-content: flex-start;
-          align-items: stretch;
-        }
-  
-        .menu-toggle:checked ~ .menu-list {
-          display: flex;
-        }
-  
-        /* Estilos para submenús */
-        .sub-menu {
-          display: none;
-        }
-  
-        .menu-item:hover .sub-menu {
-          display: flex;
-          flex-direction: column;
-          position: static;
-        }
-      }
-  
-      /* Estilos para dispositivos de escritorio */
-      @media (min-width: 768px) {
-        label.menu-icon {
-          display: none !important;
-        }
-        /* Disposición horizontal */
-        .menu {
-          flex-direction: row;
-          justify-content: space-between;
-          align-items: center;
-          height: 4rem;
-          background-color: wheat;
-          margin: 0.5rem;
-        }
-  
-        /* Estilos para el botón de menú */
-        .menu-toggle {
-          display: none;
-        }
-  
-        
-  
-        .menu-list {
-          display: flex;
-          flex-direction: row;
-          justify-content: flex-end;
-          align-items: center;
-          margin: 0 auto !important;
-        }
-  
-        /* Estilos para submenús */
-        .sub-menu {
-          position: absolute;
-          z-index: 1;
-          display: none;
-          padding: 0;
-
-        }
-  
-        .menu-item:hover .sub-menu {
-          display: flex;
-          flex-direction: column;
-          position: absolute;
-          width: 180px !important;
-          top: 3.4rem;
-        }
-
-        ul.sub-menu .menu-item a {
-          background-color: #FF7648;
-          color: white;
-          display: block;
-        }
-      }
-
-
-
-ul.menu-list,
-ul.sub-menu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
 .menu-item a {
   text-decoration: none;
   padding: .5rem 1.2rem;
   text-align: center;
-  color: #FF7648;
+  font-size: 15px;
+  color: black;
+}
+.menu-item {
+  display: flex;
+  justify-content: center;
+}
+/* Oculta la lista del menú por defecto */
+.menu-list {
+  display: none;
 }
 
 li.menu-item:hover {
   background-color: #F4ECE1;
-  border-bottom: 1px solid #FF7648;
+  border-bottom: 1px solid black   ;
+}
+  
+/* Muestra la lista del menú cuando el checkbox está marcado */
+.menu-toggle:checked ~ .menu-list {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+  
+/* Oculta el input asociado al label que despliega el icono del menu hamburguesa */
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+img.image-header {
+  width: 45px;
+  position: relative;
+  left: 86%;
+  top: 26px;
+}
+.login-button-t {
+  display: none;
+}
+  
+
+
+@media screen and (min-width: 600px) {
+.image-header{
+    position: static;
+    width: 60px;
+    margin: 10px;
+}
+img.image-header[_ngcontent-ng-c4013964378] {
+  position: static;
 }
 
-.menu-icon {  
-  display: flex;
-  justify-content: end;
-  margin: .5rem;
-  font-size: 1.5rem;
+.login-button-m {
+  display: none;
+} 
+  /* Disposición vertical */
+  /* .menu {
+    flex-direction: column;
+  } */
+  .menu-list {
+    display: none;
+    overflow: auto;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+  .menu-toggle:checked ~ .menu-list {
+    display: flex;
+  }
+    
+  /* Estilos para submenús */
+  .sub-menu {
+    display: none;
+  }
+    
+  .menu-item:hover .sub-menu {
+    display: flex;
+    flex-direction: column;
+    position: static;
+  }
+
+  .label.menu-icon {
+    display: none !important;
+  }
+  /* Disposición horizontal */
+  .menu {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+    background-color: #F5DEB3;
+    margin: 10px;
+    border-radius: 10px
+  }
+  
+  /* Estilos para el botón de menú */
+  .menu-toggle {
+    display: none;
+  }
+  .menu-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 auto !important;
+  }
+  
+  /* Estilos para submenús */
+  .sub-menu {
+    position: absolute;
+    z-index: 1;
+    display: none;
+    padding: 0;
+  }
+  
+  .menu-item:hover .sub-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 180px !important;
+    top: 3.4rem;
+    }
+  ul.sub-menu .menu-item a {
+    background-color: #FF7648;
+    color: white;
+    display: block;
+  }
+
+
+  ul.menu-list,
+  ul.sub-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu-item a {
+    text-decoration: none;
+    padding: .5rem 1rem;
+    text-align: center;
+    font-size: 15px;
+    color: black;
+  }
+
+  .menu-icon {  
+    display: none;
+    /* justify-content: end;
+    margin: .5rem;  
+    font-size: 1.5rem; */
+  }
+
+.login-button-t {
+  display: block;
+}
+
+
+
+@media screen and (min-width: 850px){
+  .menu-item a {
+    padding: .5rem 1.5rem;
+    text-align: center;
+    font-size: 17px;
+    color: black;
+  }
+  }
 }
