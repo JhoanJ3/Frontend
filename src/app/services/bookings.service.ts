@@ -11,22 +11,22 @@ export class BookingsService {
   ) { }
 
   newBooking( booking: any ) {
-    return this.http.post<any>( 'http://localhost:3000/api/reservas', booking )
+    return this.http.post<any>( 'http://100.24.32.88:3000/api/reservas', booking )
   }
 
   getBookings() {
-    return this.http.get<any>( 'http://localhost:3000/api/reservas' )
+    return this.http.get<any>( 'http://100.24.32.88:3000/api/reservas' )
   }
   
   removeBooking (id: any){
-    return this.http.delete<any>( `http://localhost:3000/api/reservas/${ id }` )
+    return this.http.delete<any>( `http://100.24.32.88:3000/api/reservas/${ id }` )
   }
 
   getBookingById( id: any ) {
-    return this.http.get<any>( `http://localhost:3000/api/reservas/${ id }` )
+    return this.http.get<any>( `http://100.24.32.88:3000/api/reservas/${ id }` )
   }
 
   updateBookingById( id: String, updateBooking: any ) {
-    return this.http.patch<any>( `http://localhost:3000/api/reservas/${ id }`, updateBooking )
+    return this.http.patch<any>( `http://100.24.32.88:3000/api/reservas/${ id }`, updateBooking )
   }
 }
