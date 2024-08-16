@@ -25,7 +25,6 @@ img.segunda-img-corazon-patitas {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    /* margin-top: 3.5rem; */
     width: 150px;
     height: 150px;
     border-radius: 3rem;
@@ -96,7 +95,6 @@ img.segunda-img-patitas {
     background-color: #FF7648;
     border-radius: 2rem;
 }
-
 
 /* Verificar de aqui pa' abajo */
 
@@ -220,7 +218,6 @@ img.segunda-img-patitas {
     animation-range: entry 12% cover 42%;
     animation-fill-mode: both;
 }
-
 
 
 
