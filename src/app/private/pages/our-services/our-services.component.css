@@ -92,10 +92,11 @@ img.card-img-top {
 }
 
 .card_btn{
-    background-color: #FF7648;
+    background-color: black;
+    border-radius: 1rem;
+    appearance: none;
     padding: 16px;
     color: white;
-    border-block-color: white;
 }
 
 .card_btn:hover{

@@ -71,6 +71,10 @@ img.image-header {
     width: 60px;
     margin: 10px;
 }
+img.image-header {
+  left: 0%;
+  top: 0px;
+}
 img.image-header[_ngcontent-ng-c4013964378] {
   position: static;
 }

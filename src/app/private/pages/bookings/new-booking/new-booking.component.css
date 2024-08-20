@@ -2,3 +2,31 @@
     color: red;
     height: 1.4rem;
 }
+.btn.disabled, .btn:disabled, fieldset:disabled .btn {
+    color: var(--bs-btn-disabled-color);
+    pointer-events: none;
+    background-color: black;
+    border-color: black;
+    opacity: var(--bs-btn-disabled-opacity);
+}
+.container {
+    width: 100%;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between; /* Alinea los elementos a los lados opuestos */
+    margin-top: 20px; /* Opcional: agrega espacio superior */
+}
+
+.btn {
+    margin: 0 20px; /* Margen horizontal para separar los botones del borde del contenedor */
+}
+
+.btn-primary {
+    /* Aquí puedes agregar estilos adicionales específicos para el botón primario si es necesario */
+}
+
+.btn-secondary {
+    /* Aquí puedes agregar estilos adicionales específicos para el botón secundario si es necesario */
+}
