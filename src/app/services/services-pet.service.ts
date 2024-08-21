@@ -11,21 +11,21 @@ export class ServicesPetService {
   ) { }
 
   newPet( pet: any )
-   {return this.httpPet.post<any>( 'http://100.24.32.88:3000/api/pets', pet)}
+   {return this.httpPet.post<any>( 'http://54.234.221.116:3000/api/pets', pet)}
    
   getPets() {
-    return this.httpPet.get<any>( 'http://100.24.32.88:3000/api/pets' )
+    return this.httpPet.get<any>( 'http://54.234.221.116:3000/api/pets' )
   }
   removePet( id: any ) {
-    return this.httpPet.delete<any>( `http://100.24.32.88:3000/api/pets/${ id }` )
+    return this.httpPet.delete<any>( `http://54.234.221.116:3000/api/pets/${ id }` )
   }
 
   getPetById( id: any ) {
-    return this.httpPet.get<any>( `http://100.24.32.88:3000/api/pets/${ id }` )
+    return this.httpPet.get<any>( `http://54.234.221.116:3000/api/pets/${ id }` )
   }
 
   updatePetById( id: any, updatedPet: any ) {
-    return this.httpPet.patch<any>( `http://100.24.32.88:3000/api/pets/${ id }`, updatedPet )
+    return this.httpPet.patch<any>( `http://54.234.221.116:3000/api/pets/${ id }`, updatedPet )
   }
 
 }
