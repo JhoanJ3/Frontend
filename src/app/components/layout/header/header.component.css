@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
 /* Estilos generales del menú */
 .menu {
   display: flex;
@@ -7,6 +9,10 @@
   background-color: #F5DEB3;
   border-radius: 10px;
   margin: 10px;
+
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 label.menu-icon {
   font-size: 25px;
@@ -24,6 +30,7 @@ label.menu-icon {
 .menu-item {
   display: flex;
   justify-content: center;
+  font-weight: bold;
 }
 /* Oculta la lista del menú por defecto */
 .menu-list {

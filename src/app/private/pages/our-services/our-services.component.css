@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+
 a{
     text-decoration: none;
     color: white;
@@ -20,6 +23,86 @@ a:hover{
     color: white;
 }
 
+.card {
+    background-color: #F5DEB3;
+    padding: 1rem;
+}
+
+.banner_space{
+    background-color: #D9B4EA;
+    height: 520px;
+    padding-top: .5rem;
+    border-radius: 25px;
+    margin: 10px 10px 0px 10px;
+
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.imagen-superiores-banner {
+    display: flex;
+    justify-content: space-between;
+}
+
+img.primera-img-patitas {
+    position: relative;
+    height: 90px;
+    width: 90px;
+    padding: 0;
+    margin: 0
+}
+
+img.segunda-img-corazon-patitas {
+    position: relative;
+    height: 90px;
+    width: 90px;
+}
+
+.banner_img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 3rem;
+}
+
+img.banner_comas {
+    width: 8%;
+    height: 0%;
+}
+
+img.banner_comas2 {
+    width: 8%;
+    transition: transform 0.5s;
+    transform: rotate(182deg);
+}
+
+.banner_title{
+    display: flex;
+    justify-content: center;
+    font-size: 150px;
+    margin-top: 1rem;
+}
+
+.imagen-inferiores-banner {
+    display: flex;
+    justify-content: space-between;
+}
+
+img.primera-img-corazon-patitas {
+    position: relative;
+    height: 90px;
+    width: 90px;
+}
+
+img.segunda-img-patitas {
+    position: relative;
+    height: 90px;
+    width: 90px;
+}
+
 .banner_space_ms{
     display: flex;
     justify-content: center;
@@ -29,9 +112,54 @@ a:hover{
     height: 165px;
 }
 
+.card-primera {
+    background-color: #F5DEB3;
+    padding: 1rem;
+    margin: 0% 3%;
+    border-radius: 3%;
+}
+
+.card-segunda {
+    background-color: #F5DEB3;
+    padding: 1rem;
+    margin: 0% -4%;
+    border-radius: 3%;
+}
+
+.card-tercera {
+    background-color: #F5DEB3;
+    padding: 1rem;
+    margin: 0% 6%;
+    border-radius: 3%;
+}
+
+.card-cuarta {
+    background-color: #F5DEB3;
+    padding: 1rem;
+    margin: 0% 5%;
+    border-radius: 3%;
+}
+
+.card-quinta {
+    background-color: #F5DEB3;
+    padding: 1rem;
+    margin: 0% 4% 0% 1%;
+    border-radius: 3%;
+}
+
+.card-sexta {
+    background-color: #F5DEB3;
+    padding: 1rem;
+    margin: 0% 8% 5% 2%;
+    border-radius: 3%;
+}
+
+
+
 img.card-img-top {
     height: 245px;
     object-fit: cover;
+    border-radius: 3%;
 
     view-timeline-name: --main;
     view-timeline-axis: block;
@@ -51,6 +179,10 @@ img.card-img-top {
     margin-top: 3rem;
     width: 100%;
     justify-content: center;
+
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .serv_list{
@@ -77,6 +209,9 @@ img.card-img-top {
 
 .card-body {
     text-align: center;
+    margin: 1rem 0;
+    border: solid black;
+    border-radius: 3%;
 }
 
 .card_title,
@@ -85,6 +220,7 @@ img.card-img-top {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    font-weight: bold;
 }
 
 .card_price{
@@ -92,10 +228,11 @@ img.card-img-top {
 }
 
 .card_btn{
-    background-color: black;
+    background-color: #ff7749;
     border-radius: 1rem;
     appearance: none;
     padding: 16px;
+    margin: 10%;
     color: white;
 }
 
@@ -149,6 +286,18 @@ img.card-img-top {
 @media screen and ( max-width:576px ){
     .serv_title{
         font-size: 50px;
+    }
+
+    .banner_title {
+        font-size: 105px;
+    }
+
+    img.banner_comas {
+        width: 19%;
+    }
+
+    img.banner_comas2{
+        width: 15%;
     }
 
 
