@@ -48,6 +48,17 @@ img.segunda-img-corazon-patitas {
     border-radius: 3rem;
 }
 
+img.banner_comas {
+    width: 8%;
+    height: 0%;
+}
+
+img.banner_comas2 {
+    width: 8%;
+    transition: transform 0.5s;
+    transform: rotate(182deg);
+}
+
 .banner_title{
     display: flex;
     justify-content: center;
