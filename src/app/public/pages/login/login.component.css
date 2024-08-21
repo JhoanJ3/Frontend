@@ -223,10 +223,11 @@ li{
 
 @media screen and ( min-width: 850px ){
     .button1{
-        font-size: 20px;
+        font-size: 30px;
         width: 100%;
         font-weight: 400;
-        padding: 5px 20px 6px 20px;
+        padding: 5px 25px 10px 20px;
+        margin: 0 21px 0px 0px;
     }
 }
 
