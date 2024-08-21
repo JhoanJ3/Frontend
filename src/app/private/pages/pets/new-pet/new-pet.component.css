@@ -49,12 +49,12 @@ img.segunda-img-corazon-patitas {
 }
 
 img.banner_comas {
-    width: 6%;
+    width: 5%;
     height: 0%;
 }
 
 img.banner_comas2 {
-    width: 6%;
+    width: 5%;
     transition: transform 0.5s;
     transform: rotate(182deg);
 }

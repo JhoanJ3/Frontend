@@ -114,8 +114,12 @@ img.segunda-img-patitas {
     }
 
     img.banner_comas {
-        width: 8%;
+        width: 5%;
         height: 0%;
+    }
+
+    img.banner_comas2 {
+        width: 5%;
     }
 }
 
