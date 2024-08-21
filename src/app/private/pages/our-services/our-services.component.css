@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+
 a{
     text-decoration: none;
     color: white;
@@ -31,6 +34,10 @@ a:hover{
     padding-top: .5rem;
     border-radius: 25px;
     margin: 10px 10px 0px 10px;
+
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .imagen-superiores-banner {
@@ -161,6 +168,10 @@ img.card-img-top {
     margin-top: 3rem;
     width: 100%;
     justify-content: center;
+
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .serv_list{
@@ -198,6 +209,7 @@ img.card-img-top {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    font-weight: bold;
 }
 
 .card_price{
@@ -205,7 +217,7 @@ img.card-img-top {
 }
 
 .card_btn{
-    background-color: black;
+    background-color: #ff7749;
     border-radius: 1rem;
     appearance: none;
     padding: 16px;

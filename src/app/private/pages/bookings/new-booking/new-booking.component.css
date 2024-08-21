@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
 .error {
     color: red;
     height: 1.4rem;
@@ -9,8 +11,80 @@
     border-color: black;
     opacity: var(--bs-btn-disabled-opacity);
 }
+
+.banner_space{
+    background-color: #D9B4EA;
+    height: 520px;
+    padding-top: .5rem;
+    border-radius: 25px;
+    margin: 10px 10px 0px 10px;
+}
+
+.imagen-superiores-banner {
+    display: flex;
+    justify-content: space-between;
+}
+
+img.primera-img-patitas {
+    position: relative;
+    height: 90px;
+    width: 90px;
+    padding: 0;
+    margin: 0
+}
+
+img.segunda-img-corazon-patitas {
+    position: relative;
+    height: 90px;
+    width: 90px;
+}
+
+.banner_img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 3rem;
+}
+
+.banner_title{
+    display: flex;
+    justify-content: center;
+    font-size: 150px;
+    margin-top: 1rem;
+
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.imagen-inferiores-banner {
+    display: flex;
+    justify-content: space-between;
+}
+
+img.primera-img-corazon-patitas {
+    position: relative;
+    height: 90px;
+    width: 90px;
+}
+
+img.segunda-img-patitas {
+    position: relative;
+    height: 90px;
+    width: 90px;
+}
+
 .container {
     width: 100%;
+    margin: 3% 2% 2% 9%;
+    padding: 1% 22% 7% 19%;
+
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-weight: bold;
 }
 
 .button-group {
@@ -21,5 +95,6 @@
 
 .btn {
     margin: 0 20px; 
+    background-color: #c567f1;
 }
 
