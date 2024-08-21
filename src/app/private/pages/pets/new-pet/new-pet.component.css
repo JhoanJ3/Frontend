@@ -2,3 +2,23 @@
     color: red;
     height: 1.4rem;
 }
+.btn.disabled, .btn:disabled, fieldset:disabled .btn {
+    color: var(--bs-btn-disabled-color);
+    pointer-events: none;
+    background-color: black;
+    border-color: black;
+    opacity: var(--bs-btn-disabled-opacity);
+}
+.container {
+    width: 100%;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 20px; 
+}
+
+.btn {
+    margin: 0 20px; 
+}

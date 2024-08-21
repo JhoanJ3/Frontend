@@ -59,6 +59,9 @@
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
           <label class="form-check-label" for="exampleCheck1">Acepto Terminos y Condiciones</label>
         </div>
-        <button class="btn btn-primary" type="submit" [disabled]="petForm.invalid" >Registra</button>
+        <div class="button-group">
+          <button type="submit" class="btn btn-primary" [disabled]="petForm.invalid">Reserva</button>
+          <a class="btn btn-secondary" routerLink="/dashboard/bookings">Ir a Reservas</a>
+      </div>
       </form>
 </div>
