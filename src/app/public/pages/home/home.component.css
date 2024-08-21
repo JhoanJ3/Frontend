@@ -420,4 +420,12 @@ img.segunda-img-patitas {
     .banner_title{
         font-size: 65px;
     }
+
+    img.banner_comas {
+        width: 11%;
+    }
+
+    img.banner_comas2 {
+        width: 11%;
+    }
 }

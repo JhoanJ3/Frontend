@@ -288,5 +288,17 @@ img.card-img-top {
         font-size: 50px;
     }
 
+    .banner_title {
+        font-size: 105px;
+    }
+
+    img.banner_comas {
+        width: 19%;
+    }
+
+    img.banner_comas2{
+        width: 15%;
+    }
+
 
 }

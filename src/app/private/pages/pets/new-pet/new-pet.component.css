@@ -49,12 +49,12 @@ img.segunda-img-corazon-patitas {
 }
 
 img.banner_comas {
-    width: 8%;
+    width: 6%;
     height: 0%;
 }
 
 img.banner_comas2 {
-    width: 8%;
+    width: 6%;
     transition: transform 0.5s;
     transform: rotate(182deg);
 }
@@ -62,7 +62,7 @@ img.banner_comas2 {
 .banner_title{
     display: flex;
     justify-content: center;
-    font-size: 150px;
+    font-size: 121px;
     margin-top: 1rem;
 
     font-family: "Amatic SC", sans-serif;
@@ -107,4 +107,24 @@ img.segunda-img-patitas {
 .btn {
     margin: 0 20px; 
     background-color: #c567f1;
+}
+
+@media screen and ( max-width:576px ) {
+
+    .banner_title {
+        font-size: 59px;
+    }
+
+    img.banner_comas {
+        width: 11%;
+    }
+
+    img.banner_comas2 {
+        width: 11%;
+    }
+
+    .imagen-inferiores-banner {
+        margin: 28% 0% 0% 0%;
+    }
+
 }
